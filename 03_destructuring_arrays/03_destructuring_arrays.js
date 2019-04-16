@@ -1,3 +1,3 @@
-let [firstName] = ['Howson', 'Genius', 'Lex'];
+let [firstName, middleName] = ['Howson', 'Genius', 'Lex'];
 
-console.log(firstName);
+console.log(firstName + middleName);
