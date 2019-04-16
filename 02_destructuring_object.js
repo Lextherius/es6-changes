@@ -6,6 +6,6 @@ const personalInformation = {
     zipcode : 1234567
 }
 
-const {firstName, lastName} = personalInformation;
+const {firstName: fn, lastName: ln} = personalInformation;
 
-console.log(`${firstName} ${lastName}`);
+console.log(`${fn} ${ln}`);
