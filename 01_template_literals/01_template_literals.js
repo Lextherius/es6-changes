@@ -7,5 +7,7 @@ let num2 = 3;
 
 // console.log(fullName);
 
-let example = 'Hello\n' +  'World';
+let example = `${word1}
+${word2}
+`;
 console.log(example);
