@@ -5,7 +5,7 @@ It comes with a lot of functionality and some gotchas
 */
 
 function add(...nums){
-    let total = nums.reduce(function(x,y){
+    let total = nums.reduce((x,y) => {
 
         console.log(`x : ${x}`);
         console.log(`y : ${y}`);
