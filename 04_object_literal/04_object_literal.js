@@ -1,6 +1,6 @@
 function addressMaker(city, state){
     const newAddress = {newCity: city, newState: state};
-
+    
     console.log(newAddress);
 }
 
