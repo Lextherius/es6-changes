@@ -1,8 +1,11 @@
 /*
-const stand for constant, also operate on the block-scope level
+However you cannot change the array into a different data type.
+
+Result :
+Error, Assignment to constant variable.
 */
 
 const example = [];
-example.push(10);
+example = 5;
 
 console.log(example);
