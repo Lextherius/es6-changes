@@ -1,11 +1,13 @@
 /*
-However you cannot change the array into a different data type.
+Same goes for object too
+
+You can modify objects and array but you cannot overwrite the data type
 
 Result :
-Error, Assignment to constant variable.
+Object {firstName: "Howson"}
 */
 
-const example = [];
-example = 5;
+const example = {};
+example.firstName = 'Howson';
 
 console.log(example);
