@@ -1,10 +1,7 @@
 /*
-Let is a stricter version of var and it uses block=scope
-Hence this example would give us an error.
+const stand for constant, also operate on the block-scope level
 */
-if(false)
-{
-    let example = 5;
-}
+
+const example = 5;         
 
 console.log(example);
