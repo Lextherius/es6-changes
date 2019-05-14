@@ -1,0 +1,26 @@
+{
+  "name": "es6-changes",
+  "version": "1.0.0",
+  "description": "Just some codes to showcase the new changes and features of ES6.",
+  "main": "index.js",
+  "dependencies": {
+    "node-fetch": "^2.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lextherius/es6-changes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lextherius/es6-changes/issues"
+  },
+  "homepage": "https://github.com/Lextherius/es6-changes#readme"
+}
