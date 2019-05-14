@@ -4,15 +4,21 @@ async function fetchStarshipsOwned(peopleId) {
     const response = await fetch(`https://swapi.co/api/people/${peopleId}/`);
     const people = await response.json();
 
-    const ships = [];
-    for(const shipLink of people.starships)
-    {
-        const response = await fetch(shipLink);
-        const ship = await response.json();
-        ships.push(ship.name);
-    }
+    const ships = people.starships.map(shipLink=>{
+        return fetch(shipLink)
+        .then(response => response.json())
+        .then(ship => ship.name);
+    });
+    return Promise.all(ships);
 
-    return ships;
+    // const ships = [];
+    // for(const shipLink of people.starships)
+    // {
+    //     const response = await fetch(shipLink);
+    //     const ship = await response.json();
+    //     ships.push(ship.name);
+    // }
+    // return ships;
 
     // return fetch(`https://swapi.co/api/people/${peopleId}/`)
     // .then(response => response.json())
