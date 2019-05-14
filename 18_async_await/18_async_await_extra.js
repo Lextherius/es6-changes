@@ -11,7 +11,7 @@ async function fetchStarshipsOwned(peopleId) {
         const ship = await response.json();
         ships.push(ship.name);
     }
-    
+
     return ships;
 
     // return fetch(`https://swapi.co/api/people/${peopleId}/`)
@@ -26,5 +26,9 @@ async function fetchStarshipsOwned(peopleId) {
     // });
 }
 
-const result = fetchStarshipsOwned(1);
-console.log(result);
+const start = Date.now();
+fetchStarshipsOwned(1).then(response => {
+    console.log(response)
+    const timetaken = (Date.now() - start)/1000;
+    console.log(`Time Taken : ${timetaken}`);
+});
